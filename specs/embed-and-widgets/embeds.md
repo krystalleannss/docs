@@ -3,11 +3,18 @@
 To place an embed in the page, the website owner includes a placeholder `div` element. For example, a weather embed could look like this:
 
 ```html
-<div
-  data-component-embed="weather-example"
-  data-dark-theme
-  data-location="Portugal"
-></div>
+<!--
+Use an <instagram-post></instagram-post> HTML element to tell Zaraz where to put the embedded content.
+
+Add a post-url attribute that contains a URL to the post you want to embed,
+and optionally add captions="true" to determine whether to include post captions.
+-->
+
+<instagram-post
+  post-url="https://www.instagram.com/p/C3Sk6d2MTjI/"
+  captions="true"
+></instagram-post>
+  
 ```
 
 Inside the External Component, the embed will be defined like in this example:
